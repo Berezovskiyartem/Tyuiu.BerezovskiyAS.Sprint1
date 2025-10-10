@@ -5,7 +5,7 @@ namespace Tyuiu.BerezovskiyAS.Sprint1.Task2.V28.Lib
     {
         public int ConvertCelsiusToKelvin(int value)
         {
-            return value * value;
+            return value + 273;
         }
     }
 }
