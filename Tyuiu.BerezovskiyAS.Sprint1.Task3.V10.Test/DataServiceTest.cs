@@ -9,7 +9,7 @@ namespace Tyuiu.BerezovskiyAS.Sprint1.Task3.V10.Test
         {
             DataService ds = new DataService();
             double number = 23.6;
-            Assert.AreEqual(23.6, number);
+            Assert.AreEqual(ds.NumberToMoney(236), "23.6 руб. - это 23 руб. 60 коп.");
         }
     }
 }
