@@ -3,9 +3,9 @@ namespace Tyuiu.BerezovskiyAS.Sprint1.Task3.V10.Lib
 {
     public class DataService : ISprint1Task3V10
     {
-        public double NumberToMoney(double number)
+        public string NumberToMoney(double number)
         {
-            return number;
+            return number.ToString();
         }
     }
 }
