@@ -5,10 +5,12 @@ namespace Tyuiu.BerezovskiyAS.Sprint1.Task3.V10.Lib
     {
         public string NumberToMoney(double number)
         {
-            int rubles = (int)number; // Целая часть - рубли
-            int kopecks = (int)((number - rubles) * 100); // Дробная часть - копейки
+            int rubles = (int)number;
+            int kopecks = (int)((number - rubles) * 100);
 
-            return $"{number} руб. - это {rubles} руб. {kopecks} коп.";
+            string formattedNumber = number.ToString().Replace(',', '.');
+
+            return $"{formattedNumber} руб. - это {rubles} руб. {kopecks} коп.".Trim();
         }
     }
 }
